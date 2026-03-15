@@ -5,7 +5,7 @@
 
 <p> 
   <img src="https://img.shields.io/badge/Release-Dec%202024-green">  
-  <img src="https://img.shields.io/github/stars/MateusPitura/web-js-kanban?style=social"> 
+  <img src="https://img.shields.io/github/stars/MateusPitura/kanban-google-classroom?style=social"> 
 </p> 
 
 ## Description
@@ -35,13 +35,15 @@ This project is designed to fetch data from Google Classroom and store it in an 
 
 **For devs:** 
 
-1. `git clone git@github.com:MateusPitura/web-js-kanban.git app`  
+1. `git clone git@github.com:MateusPitura/kanban-google-classroom.git app`  
 
-2. Configure your `.dotenv` in frontend folder with your credentials from Google Classroom API obtained in GCP
+2. Configure `.env` in frontend folder with your credentials from Google Classroom API obtained in GCP
 
-3. `docker compose up --build`
+3. Configure `.env` in backend/prisma folder with your database credentials
 
-4. In backend folder: `npx prisma migrate dev --name init`
+4. `docker compose up --build`
+
+5. In backend folder: `npx prisma migrate dev --name init`
 
 ## Technologies Used
 
